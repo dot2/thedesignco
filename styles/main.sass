@@ -21,11 +21,11 @@ header
         h2
             font:
                 family: $opensans
-                size: 1.5rem
+                size: 1.2rem
                 weight: 300
             color: $main
 .hero-image
-    height: 50vh
+    height: 70vh
     background:
         image: url('../images/hero-image.png')
         size: cover
@@ -78,11 +78,8 @@ header
         span
             font-weight: 300
             text-decoration: underline
-    hr
-        background-color: $accent
-        height: 2px
 .step
-    height: 75vh
+    height: 65vh
     flex-direction: row
     justify-content: space-around !important
     padding: 10em
@@ -109,3 +106,116 @@ header
                 weight: 300
             max-width: 350px
             margin-top: 1.2em
+.pricing-wrapper
+    width: 100%
+    background:
+        image: url('../images/pricing-bkg.png')
+        size: cover
+        position: center
+    height: 60vh
+    display: flex
+    justify-content: center
+    align-items: center
+    .packages
+        padding: 1em
+        padding-bottom: 3em
+        width: 650px
+        background-color: rgba(255,255,255, 0.95)
+        border-radius: 2px
+        .title
+            display: flex
+            flex-direction: column
+            align-items: center
+            h2
+                font:
+                    family: $lato
+                    size: 2rem
+                padding: 0
+        .package-lists
+            margin-top: 1em
+            padding: 0 2em
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            ul
+                margin-top: 1.5em
+                li
+                    font:
+                        family: $opensans
+                        size: 1rem
+                    padding-bottom: 1em
+        .package-title
+            display: flex
+            flex-direction: column
+            align-items: center
+            text-align: center
+            h3
+                font:
+                    family: $roboto
+                    weight: 300
+            p
+                font:
+                    family: $lato
+                    weight: bold
+        .full-package
+            width: 50%
+        .petitie-package
+            width: 50%
+        .full-package, .petitie-package
+            position: relative
+            .btn-wrapper
+                position: absolute
+                bottom: -30px
+                width: 100%
+                display: flex
+                align-items: center
+                justify-content: center
+.works-wrapper
+    height: 55vh
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    .works
+        width: 65%
+        h2
+            text-align: center
+            font:
+                family: $lato
+                size: 2rem
+        p
+            text-align: center
+            font:
+                family: $lato
+                size: 1.8rem
+                weight: 300
+        .works-icons
+            margin-top: 2em
+            display: flex
+            flex-direction: row
+            align-items: center
+            justify-content: space-between
+            .icon-text
+                margin-top: 1.2em
+                h3
+                    text-align: center
+                    font:
+                        family: $opensans
+                        size: 1.3rem
+                p
+                    margin-top: .35em
+                    width: 200px
+                    font:
+                        family: $opensans
+                        size: 1rem
+                        weight: 300
+#stuff, #wallet, #store
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+footer
+    height: 30vh
+    background-color: $main
+    span
+        color: #fff
