@@ -25,7 +25,7 @@ header
                 weight: 300
             color: $main
 .hero-image
-    height: 70vh
+    height: 65vh
     background:
         image: url('../images/hero-image.png')
         size: cover
@@ -58,64 +58,42 @@ header
             margin-top: 10px
         .btn-wrapper
             margin-top: 1em
-
-.steps-header
-    display: flex
-    flex-direction: column
-    justify-content: center
-    align-items: center
-    height: 20vh
-    background:
-        image: url('../images/marble-bkg.png')
-        size: cover
-        position: center
-    h2
-        font:
-            family: $opensans
-            size: 1.8rem
-        color: $main
-        width: 350px
-        text-align: center
-        span
-            font-weight: 300
-            text-decoration: underline
 .step
     position: relative
     height: 50vh
     flex-direction: column
     align-items: center
     justify-content: center
-    padding: 10em
+    padding: 1.5em
     border:
         bottom: solid
         width: thin
         color: $accent
-    img
-        width: 380px
-    .step-text
-        h3
-            font:
-                family: $opensans
-                weight: bold
-        img
-            width: 70px
-            margin-bottom: 1em
+    .step-title
         display: flex
         flex-direction: column
-        text-align: left
-        p
+        align-items: center
+        justify-content: center
+        h2
+            text-align: center
             font:
-                family: $opensans
-                weight: 300
-            max-width: 350px
-            margin-top: 1.2em
+                size: 1.8rem
+                family: $roboto
+    .step-img
+        width: 100%
+        display: flex
+        align-items: center
+        justify-content: center
+        margin-top: 1.5em
+        img
+            width: 65%
 .pricing-wrapper
     width: 100%
     background:
         image: url('../images/pricing-bkg.png')
         size: cover
         position: center
-    height: 60vh
+    height: 50vh
     display: flex
     justify-content: center
     align-items: center
@@ -130,55 +108,40 @@ header
             flex-direction: column
             align-items: center
             h2
+                text-align: center
                 font:
                     family: $lato
                     size: 2rem
                 padding: 0
-        .package-lists
-            margin-top: 1em
-            padding: 0 2em
-            display: flex
-            flex-direction: row
-            justify-content: space-between
-            ul
-                margin-top: 1.5em
-                li
-                    font:
-                        family: $opensans
-                        size: 1rem
-                    padding-bottom: 1em
-        .package-title
+        .text
             display: flex
             flex-direction: column
             align-items: center
+            justify-content: center
+            margin-top: 1em
             text-align: center
-            h3
-                font:
-                    family: $roboto
-                    weight: 300
-            p
-                font:
-                    family: $lato
-                    weight: bold
-        .full-package
-            width: 50%
-        .petitie-package
-            width: 50%
-        .full-package, .petitie-package
-            position: relative
-            .btn-wrapper
-                position: absolute
-                bottom: -30px
-                width: 100%
-                display: flex
-                align-items: center
-                justify-content: center
+        .text h3
+            font:
+                family: $opensans
+                size: 1.5rem
+        .text p
+            margin-top: 1.8em
+            text-align: center
+            max-width: 380px
+            font:
+                family: $opensans
+                size: 1rem
+                weight: 300
+        .btn-wrapper
+            margin-top: 1.8em
+            .btn
+                width: 150px
 .works-wrapper
     background:
         image: url('../images/marble-bkg.png')
         size: cover
         position: center
-    height: 45vh
+    height: 35vh
     width: 100%
     display: flex
     align-items: center
@@ -201,7 +164,7 @@ header
             display: flex
             flex-direction: row
             align-items: center
-            justify-content: space-between
+            justify-content: space-around
             .icon-text
                 margin-top: 1.2em
                 h3
