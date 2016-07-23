@@ -60,11 +60,11 @@ header
             margin-top: 1em
 .step
     position: relative
-    height: 50vh
+    height: 100%
     flex-direction: column
     align-items: center
     justify-content: center
-    padding: 1.5em
+    padding: 3em 0
     border:
         bottom: solid
         width: thin
@@ -79,6 +79,21 @@ header
             font:
                 size: 1.8rem
                 family: $roboto
+        span
+            width: 100%
+            text-align: center
+            color: $accent
+            font:
+                size: .8rem
+                family: $lato
+                weight: 300
+        h3
+            text-align: center
+            font:
+                size: 1rem
+                family: $opensans
+                weight: 300
+            color: $main
     .step-img
         width: 100%
         display: flex
@@ -102,7 +117,7 @@ header
         padding-bottom: 3em
         width: 650px
         background-color: rgba(255,255,255, 0.95)
-        border-radius: 2px
+        border-radius: 1.5px
         .title
             display: flex
             flex-direction: column
@@ -123,7 +138,7 @@ header
         .text h3
             font:
                 family: $opensans
-                size: 1.5rem
+                size: 1.2rem
         .text p
             margin-top: 1.8em
             text-align: center
@@ -141,7 +156,8 @@ header
         image: url('../images/marble-bkg.png')
         size: cover
         position: center
-    height: 35vh
+    height: auo
+    padding: 1em
     width: 100%
     display: flex
     align-items: center
@@ -295,3 +311,15 @@ footer
                 family: $lato
                 size: 1.1rem
                 weight: bold
+.text-wrapper
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+.upload-text
+    margin-top: 1.87em
+    max-width: 500px
+    font:
+        family: $opensans
+        size: 1rem
+    color: $main
