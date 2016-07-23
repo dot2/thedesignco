@@ -30,12 +30,16 @@ a
     color: #fff
     font:
         family: $roboto
-        size: 1.2rem
+        size: 1.1rem
     box-shadow: 0 0 5px $shadow
     transition: all 0.2s ease-in-out
     &:hover
+        background-color: darken($highlight, 5%)
+        box-shadow: 0 5px 18px $shadow
         color: #fff
-        box-shadow: 0 0 8px $shadow
+.back
+    position: absolute
+    left: 1.8em
 hr
     background-color: $accent
     height: 2px
@@ -62,5 +66,34 @@ li
             size: 1.8rem
             family: $roboto
 .wrapper
+    position: relative
     margin-top: 2.5em
+    padding-bottom: 1em
+    max-width: 1200px
     width: 100%
+.padding
+    margin: 1.87em 0
+.checkout-btn
+    background-color: $highlight
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 50%
+    position: fixed
+    right: 5em
+    bottom: 3em
+    z-index: 999
+    width: 65px
+    height: 65px
+    font-family: $opensans
+    img
+        width: 60%
+        height: auto
+    box-shadow: 0 0 8px $shadow
+    font-family: $opensans
+    transition: all 0.2s ease-in-out
+    &:hover
+        background-color: darken($highlight, 5%)
+        box-shadow: 0 5px 18px $shadow
+.margin-top
+    margin-top: 1em
